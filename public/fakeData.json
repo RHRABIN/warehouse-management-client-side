@@ -1,0 +1,47 @@
+[
+    {
+        "_id": "626e301f68c3145fdc73b997",
+        "description": "d97ab7d8-d245-4137-a8bf-ae6b1eddcb6e",
+        "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+        "price": 169,
+        "name": "Brewer Rowe",
+        "suplierName": "<ReferenceError: suplierName is not defined>",
+        "quantity": 0
+    },
+    {
+        "_id": "626e301f7252747f87001510",
+        "description": "44769f20-bdba-483e-80c3-5a8bdd793c6e",
+        "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+        "price": 172,
+        "name": "Mcgowan Pugh",
+        "suplierName": "<ReferenceError: suplierName is not defined>",
+        "quantity": 0
+    },
+    {
+        "_id": "626e301fe112e6926382d494",
+        "description": "678540b5-d454-41d9-8a4a-43830ba82cee",
+        "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+        "price": 131,
+        "name": "Serena Chandler",
+        "suplierName": "<ReferenceError: suplierName is not defined>",
+        "quantity": 0
+    },
+    {
+        "_id": "626e301f60da057a9083b1e7",
+        "description": "fe11061a-b615-47be-8da6-bde7f1426266",
+        "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+        "price": 136,
+        "name": "Barry Hendrix",
+        "suplierName": "<ReferenceError: suplierName is not defined>",
+        "quantity": 0
+    },
+    {
+        "_id": "626e301f50c30a9acc1d12ff",
+        "description": "0b6047f4-f224-4eac-98ad-0b199fb5acb8",
+        "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+        "price": 158,
+        "name": "Priscilla Vasquez",
+        "suplierName": "<ReferenceError: suplierName is not defined>",
+        "quantity": 0
+    }
+]
