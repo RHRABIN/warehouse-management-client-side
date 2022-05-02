@@ -10,6 +10,7 @@ const Item = ({ item }) => {
             <p>${price}</p>
             <p><small>{description}</small></p>
             <h4>{name}</h4>
+            <button className="btn btn-outline btn-primary ps-5 pe-5">Info</button>
         </div>
     );
 };
