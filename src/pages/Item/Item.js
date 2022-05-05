@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './item.css'
 
 const Item = ({ item }) => {
     const { name, description, picture, price, quantity } = item;
+    const navigate = useNavigate()
+    const handleCheck = () => {
+        navigate('/inventory')
+    }
     return (
         <div className='single-item'>
             <img className='flex-shrink-0 object-cover w-full border-transparent rounded outline-none ' src={picture} alt="" />
@@ -10,7 +15,7 @@ const Item = ({ item }) => {
             <p>${price}</p>
             <p><small>{description}</small></p>
             <h4>{name}</h4>
-            <button className="btn btn-outline btn-primary ps-5 pe-5">Info</button>
+            <button onClick={handleCheck} className="btn btn-outline btn-primary ps-5 pe-5">Info</button>
         </div>
     );
 };
