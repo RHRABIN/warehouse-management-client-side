@@ -1,9 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const Inventory = () => {
+    const { id } = useParams()
     return (
         <div>
-            <h1>Protected route</h1>
+            <h3>Protected route : {id}</h3>
         </div>
     );
 };

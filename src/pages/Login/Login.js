@@ -57,8 +57,8 @@ const Login = () => {
 
     }
     return (
-        <div className='bg-stone-400'>
-            <div className='container mt-4  form-container '>
+        <div className='bg-slate-200 '>
+            <div className='container mt-4  form-container mb-4'>
                 <h3 className='text-center text-primary'>Please Login</h3>
                 <Form onSubmit={handleLogin} className='form-control'>
                     <Form.Group className="mb-3" >

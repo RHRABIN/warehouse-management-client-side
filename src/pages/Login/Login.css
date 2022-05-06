@@ -1,6 +1,7 @@
 .form-container {
     width: 50%;
     margin: 0 auto;
+    /* float: right; */
 }
 
 @media screen and (max-width:560px) {
