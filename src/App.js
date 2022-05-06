@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/inventory' element={
+        <Route path='/inventory/:id' element={
           <ReauireAuth>
             <Inventory></Inventory>
           </ReauireAuth>

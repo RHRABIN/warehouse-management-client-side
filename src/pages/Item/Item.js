@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import './item.css'
 
 const Item = ({ item }) => {
-    const { name, description, picture, price, quantity } = item;
+    const { name, description, picture, price, quantity, _id } = item;
     const navigate = useNavigate()
     const handleCheck = () => {
-        navigate('/inventory')
+        navigate(`/inventory/${_id}`)
     }
     return (
         <div className='single-item'>
