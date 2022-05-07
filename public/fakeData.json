@@ -1,65 +1,65 @@
 [
-    {
-      "_id": "626f56bd7325660c835ccf66",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 162,
-      "name": "Maritza Norris",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    },
-    {
-      "_id": "626f56bde79f37cf9005b234",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 161,
-      "name": "Lolita Wood",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    },
-    {
-      "_id": "626f56bdcac5b7d50f0b4b52",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 125,
-      "name": "Darcy Ballard",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    },
-    {
-      "_id": "626f56bd090bb9153656b1d9",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 146,
-      "name": "Bowen Campos",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    },
-    {
-      "_id": "626f56bd7e043708989514c6",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 176,
-      "name": "Thelma Holloway",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    },
-    {
-      "_id": "626f56bdfc11b75618c0af6e",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 194,
-      "name": "Keith Mosley",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    },
-    {
-      "_id": "626f56bdb2fbece8f4f3e6ee",
-      "description": "for a similar website design and start working on the project. If needed, put a placeholder",
-      "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
-      "price": 168,
-      "name": "Herminia Mack",
-      "suplierName": "<ReferenceError: suplierName is not defined>",
-      "quantity": 0
-    }
-  ]
+  {
+    "_id": "626f56bd7325660c835ccf66",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 162,
+    "name": "Maritza Norris",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  },
+  {
+    "_id": "626f56bde79f37cf9005b234",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 161,
+    "name": "Lolita Wood",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  },
+  {
+    "_id": "626f56bdcac5b7d50f0b4b52",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 125,
+    "name": "Darcy Ballard",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  },
+  {
+    "_id": "626f56bd090bb9153656b1d9",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 146,
+    "name": "Bowen Campos",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  },
+  {
+    "_id": "626f56bd7e043708989514c6",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 176,
+    "name": "Thelma Holloway",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  },
+  {
+    "_id": "626f56bdfc11b75618c0af6e",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 194,
+    "name": "Keith Mosley",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  },
+  {
+    "_id": "626f56bdb2fbece8f4f3e6ee",
+    "description": "for a similar website design and start working on the project. If needed, put a placeholder",
+    "picture": "https://i.ibb.co/4g40SVs/wepik-202241-124956.jpg",
+    "price": 168,
+    "name": "Herminia Mack",
+    "suplierName": "<ReferenceError: suplierName is not defined>",
+    "quantity": 0
+  }
+]
