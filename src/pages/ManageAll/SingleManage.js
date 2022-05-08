@@ -1,10 +1,8 @@
 import React from 'react';
 
-const SingleManage = ({ data }) => {
+const SingleManage = ({ data, handleRemove }) => {
     const { name, price, quantity, picture, _id } = data;
-    const handleRemove = (id) => {
-        console.log(id)
-    }
+
     return (
         <div className='border m-2 p-2 rounded-lg'>
             <div className='d-flex align-items-center justify-center'>
