@@ -3,7 +3,8 @@ import SingleManage from './SingleManage';
 import './ManageAll.css'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { Link } from 'react-router-dom';
+// Load all items from dtatabase
 const ManageAll = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
@@ -13,6 +14,7 @@ const ManageAll = () => {
                 setItems(data)
             })
     }, [items])
+    // handle remome from database and disply ui
     const handleRemove = (id) => {
         const agree = window.confirm('Are you want delete?')
         if (agree) {
@@ -33,8 +35,8 @@ const ManageAll = () => {
 
     }
     return (
-        <div>
-            <h3>Total: {items.length}</h3>
+        <div className='container'>
+            <h4 className='text-center italic text-danger'>Total: {items.length}</h4>
             <ToastContainer />
             <div className='manage-container'>
                 {
@@ -45,7 +47,11 @@ const ManageAll = () => {
                     ></SingleManage>)
                 }
             </div>
-
+            <div className="text-center">
+                <Link to='/add'>
+                    <button className='btn btn-outline btn-success ps-5  pe-5'>Add new item</button>
+                </Link>
+            </div>
         </div>
     );
 };

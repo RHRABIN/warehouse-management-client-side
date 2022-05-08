@@ -1,10 +1,12 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddNewItem from './pages/AddNewItem/AddNewItem';
 import Home from './pages/Home/Home';
 import Inventory from './pages/Inventory/Inventory';
 import Login from './pages/Login/Login';
 import ManageAll from './pages/ManageAll/ManageAll';
+import MyItems from './pages/MyItems/MyItems';
 import Register from './pages/Register/Register';
 import ReauireAuth from './pages/RequireAuth/ReauireAuth';
 import Footer from './shared/Footer/Footer';
@@ -27,12 +29,23 @@ function App() {
             <ManageAll></ManageAll>
           </ReauireAuth>
         }></Route>
+        <Route path='/add' element={
+          <ReauireAuth>
+            <AddNewItem></AddNewItem>
+          </ReauireAuth>
+        }></Route>
+        <Route path='/myitem' element={
+          <ReauireAuth>
+            <MyItems></MyItems>
+          </ReauireAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
   );
+  // event.target.reset()
 }
 
 export default App;
