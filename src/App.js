@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Inventory from './pages/Inventory/Inventory';
 import Login from './pages/Login/Login';
+import ManageAll from './pages/ManageAll/ManageAll';
 import Register from './pages/Register/Register';
 import ReauireAuth from './pages/RequireAuth/ReauireAuth';
 import Footer from './shared/Footer/Footer';
@@ -19,6 +20,11 @@ function App() {
         <Route path='/inventory/:id' element={
           <ReauireAuth>
             <Inventory></Inventory>
+          </ReauireAuth>
+        }></Route>
+        <Route path='/manage' element={
+          <ReauireAuth>
+            <ManageAll></ManageAll>
           </ReauireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>

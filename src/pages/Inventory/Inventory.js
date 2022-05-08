@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -69,7 +70,7 @@ const Inventory = () => {
     }
 
     return (
-        <div>
+        <div className='d-flex'>
 
             <div className='single-item w-50'>
                 <img className='flex-shrink-0 object-cover w-full border-transparent rounded outline-none ' src={item.picture} alt="" />
@@ -80,10 +81,15 @@ const Inventory = () => {
                 <button onClick={handleQuantity} className="btn btn-outline btn-primary ps-5 pe-5">Deleverd</button>
                 <ToastContainer />
             </div>
-            <form onSubmit={handleAdd} className='text-center mt-5 mb-5'>
-                <input type="number" name="num" id="num" placeholder='Enter item what do you want to add' />
-                <br />
-                <input className='btn btn-success' type="submit" value="Add item" />
+            <form onSubmit={handleAdd} className='text-center mt-5 mb-5 ms-5'>
+                <Form.Group className="mb-3 h-10" >
+                    {/* <Form.Label>Email address</Form.Label> */}
+                    <Form.Control type="num" name='num' id='num' placeholder="Enter quantity" required />
+
+                </Form.Group>
+                <Button className='w-100 mx-auto d-block' variant="primary" type="submit">
+                    Add Quantity
+                </Button>
             </form>
         </div>
     );
