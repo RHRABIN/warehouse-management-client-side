@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import SingleManage from './SingleManage';
 import './ManageAll.css'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
+import useAllItems from '../../hook/useAllItems';
 // Load all items from dtatabase
 const ManageAll = () => {
-    const [items, setItems] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:5000/items')
-            .then(res => res.json())
-            .then(data => {
-                setItems(data)
-            })
-    }, [items])
+    const [items, setItems] = useAllItems();
+
     // handle remome from database and disply ui
     const handleRemove = (id) => {
         const agree = window.confirm('Are you want delete?')
@@ -31,6 +26,7 @@ const ManageAll = () => {
                     }
 
                 })
+
         }
 
     }

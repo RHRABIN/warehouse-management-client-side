@@ -1,12 +1,16 @@
-.items-container {
+.icon-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
+.icon-container img:hover {
+    transition: 1s;
+    transform: scale(0.8);
+}
 
 @media screen and (max-width:640px) {
-    .items-container {
+    .icon-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }

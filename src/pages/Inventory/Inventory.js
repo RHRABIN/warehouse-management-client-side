@@ -80,7 +80,7 @@ const Inventory = () => {
                     <button onClick={handleQuantity} className="btn btn-outline btn-primary ps-5 pe-5">Deleverd</button>
                     <ToastContainer />
                 </div>
-                <form onSubmit={handleAdd} className='text-center sm:w-80 md:w-52 lg:w-1/2  mt-5 mb-5 ms-5'>
+                <form onSubmit={handleAdd} className='text-center border p-4 sm:w-80 md:w-52 lg:w-1/2  mt-5 mb-5 ms-5'>
                     <h2>Add Items Quantity</h2>
                     <Form.Group className="mb-3 h-10" >
                         {/* <Form.Label>Email address</Form.Label> */}

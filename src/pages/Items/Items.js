@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import useAllItems from '../../hook/useAllItems';
 import Item from '../Item/Item';
 import './items.css'
 const Items = () => {
-    const [items, setItems] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:5000/items')
-            .then(res => res.json())
-            .then(data => {
-                setItems(data)
-            })
-    }, [])
+    const [items, setItems] = useAllItems();
+
+
     return (
         <div>
 

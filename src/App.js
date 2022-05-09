@@ -2,11 +2,13 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddNewItem from './pages/AddNewItem/AddNewItem';
+import Blogs from './pages/Blogs/Blogs';
 import Home from './pages/Home/Home';
 import Inventory from './pages/Inventory/Inventory';
 import Login from './pages/Login/Login';
 import ManageAll from './pages/ManageAll/ManageAll';
 import MyItems from './pages/MyItems/MyItems';
+import NotFound from './pages/NotFound/NotFound';
 import Register from './pages/Register/Register';
 import ReauireAuth from './pages/RequireAuth/ReauireAuth';
 import Footer from './shared/Footer/Footer';
@@ -41,6 +43,9 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='blog' element={<Blogs></Blogs>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}>
+        </Route>
       </Routes>
       <Footer></Footer>
     </div>
