@@ -13,7 +13,7 @@ const ManageAll = () => {
     const handleRemove = (id) => {
         const agree = window.confirm('Are you want delete?')
         if (agree) {
-            const url = `http://localhost:5000/items/${id}`;
+            const url = `https://sheltered-tundra-55325.herokuapp.com/items/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

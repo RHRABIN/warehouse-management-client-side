@@ -16,7 +16,7 @@ const Item = ({ item }) => {
             <p>Suplier: {suplierName}</p>
             <p><small>{description}</small></p>
             <h4>{name}</h4>
-            <button onClick={handleCheck} className="btn btn-outline btn-primary ps-5 pe-5">Info</button>
+            <button onClick={handleCheck} className="btn btn-outline btn-primary ps-5 pe-5">UPDATE</button>
         </div>
     );
 };

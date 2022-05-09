@@ -8,7 +8,7 @@ const Inventory = () => {
     const { id } = useParams();
     const [item, setItem] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/items/${id}`;
+        const url = `https://sheltered-tundra-55325.herokuapp.com/items/${id}`;
 
         fetch(url)
             .then(res => res.json())
@@ -21,7 +21,7 @@ const Inventory = () => {
         if (quantity >= 0) {
             const updateInfo = { quantity };
 
-            const url = `http://localhost:5000/items/${id}`;
+            const url = `https://sheltered-tundra-55325.herokuapp.com/items/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -48,7 +48,7 @@ const Inventory = () => {
         const quantity = (preQuantity + newQuantity);
         const updateInfo = { quantity };
 
-        const url = `http://localhost:5000/items/${id}`;
+        const url = `https://sheltered-tundra-55325.herokuapp.com/items/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

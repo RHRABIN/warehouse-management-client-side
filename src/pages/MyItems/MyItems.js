@@ -14,7 +14,7 @@ const MyItems = () => {
         if (agree) {
 
             //seceond url
-            const url2 = `http://localhost:5000/myItems/${id}`;
+            const url2 = `https://sheltered-tundra-55325.herokuapp.com/myItems/${id}`;
             fetch(url2, {
                 method: "DELETE"
             })
@@ -29,7 +29,7 @@ const MyItems = () => {
 
         }
         if (agree) {
-            const url = `http://localhost:5000/items/${id}`;
+            const url = `https://sheltered-tundra-55325.herokuapp.com/items/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

@@ -2,7 +2,7 @@ import useAllItems from "./useAllItems";
 
 const remove = id => {
     const [items, setItems] = useAllItems;
-    const url = `http://localhost:5000/items/${id}`;
+    const url = `https://sheltered-tundra-55325.herokuapp.com/items/${id}`;
     fetch(url, {
         method: "DELETE"
     })

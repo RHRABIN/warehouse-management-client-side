@@ -10,7 +10,7 @@ const AddNewItem = () => {
     const onSubmit = data => {
         const confirm = window.confirm('Are You add this item?');
         if (confirm) {
-            const url = `http://localhost:5000/items`;
+            const url = `https://sheltered-tundra-55325.herokuapp.com/items`;
             fetch(url, {
                 method: 'POST',
                 headers: {
@@ -25,7 +25,7 @@ const AddNewItem = () => {
 
                 })
             // click by save this item together other collection
-            axios.post('http://localhost:5000/myItems', data)
+            axios.post('https://sheltered-tundra-55325.herokuapp.com/myItems', data)
                 .then(res => {
 
                     const { data } = res;
