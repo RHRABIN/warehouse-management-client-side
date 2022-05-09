@@ -7,22 +7,24 @@ const MyItem = ({ item, handleRemove }) => {
 
 
     return (
-        <div className='myitem-container'>
 
-            <div className='text-center '>
-                < img width={400} className='' src={picture} alt="" />
-            </div>
 
-            <div>
 
-                <h3>{name}</h3>
-                <p>Price : ${price}</p>
-                <p>total: {quantity}</p>
-                <p>suplier: {suplierName}</p>
-                <button onClick={() => handleRemove(_id)} className='btn btn-outline btn-danger'>Remove <span className='fw-bold'> X</span></button>
-            </div>
 
-        </div >
+
+
+        <tr >
+            <td className='text-center'>1</td>
+            <td className='text-center'>{name}</td>
+            <td className='text-center'>{price}</td>
+            <td className='text-center'>{quantity}</td>
+            <td className='text-center'><img className='w-20' src={picture} alt="" /></td>
+            <td className='text-center'><button onClick={() => handleRemove(_id)} className='btn btn-outline btn-danger'>Remove <span className='fw-bold'> X</span></button></td>
+        </tr>
+
+
+
+
     );
 };
 

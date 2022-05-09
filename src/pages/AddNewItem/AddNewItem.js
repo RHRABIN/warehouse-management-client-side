@@ -8,31 +8,34 @@ import './AddNewItem.css'
 const AddNewItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-
-        const url = `http://localhost:5000/items`;
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(data => {
-
-
-
+        const confirm = window.confirm('Are You add this item?');
+        if (confirm) {
+            const url = `http://localhost:5000/items`;
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
             })
-        // click by save this item together other collection
-        axios.post('http://localhost:5000/myItems', data)
-            .then(res => {
-                console.log(res);
-                const { data } = res;
-                if (data.insertedId) {
-                    toast('This item added succesfully');
+                .then(res => res.json())
+                .then(data => {
 
-                }
-            })
+
+
+                })
+            // click by save this item together other collection
+            axios.post('http://localhost:5000/myItems', data)
+                .then(res => {
+
+                    const { data } = res;
+                    if (data.insertedId) {
+                        toast('This item added succesfully');
+
+                    }
+                })
+        }
+
     };
     return (
         <div className=' mt-5 container text-center bg-lime-200 pb-20 pt-10'>

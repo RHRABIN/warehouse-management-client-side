@@ -15,7 +15,7 @@ const Inventory = () => {
             .then(data => setItem(data))
     }, [item]);
     // items quantity decrease
-    const handleQuantity = () => {
+    const handleRemove = () => {
         const preQuantity = item.quantity;
         const quantity = preQuantity - 1;
         if (quantity >= 0) {
@@ -68,29 +68,49 @@ const Inventory = () => {
     }
 
     return (
-        <div>
-            <div className='inventory-container container'>
+        <div className='bg-slate-100'>
+            <div className='container '>
 
-                <div className='single-item sm:w-80 md:w-52 lg:w-1/2'>
-                    <img className='flex-shrink-0 object-cover w-full border-transparent rounded outline-none ' src={item.picture} alt="" />
-                    <p>quantity:{item.quantity}</p>
-                    <p>${item.price}</p>
-                    <p><small>{item.description}</small></p>
-                    <h4>{item.name}</h4>
-                    <button onClick={handleQuantity} className="btn btn-outline btn-primary ps-5 pe-5">Deleverd</button>
-                    <ToastContainer />
+                <div className=' '>
+                    <table className="table">
+                        <thead className="thead-dark">
+                            <tr>
+                                <th>No</th>
+                                <th scope="col-4">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>{item.name}</td>
+                                <td>{item.price}</td>
+                                <td>{item.quantity}</td>
+                                <td><img className='w-20' src={item.picture} alt="" /></td>
+                                <td><button onClick={handleRemove} className='btn btn-outline btn-success'>Order This Item</button></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
                 </div>
-                <form onSubmit={handleAdd} className='text-center border p-4 sm:w-80 md:w-52 lg:w-1/2  mt-5 mb-5 ms-5'>
-                    <h2>Add Items Quantity</h2>
-                    <Form.Group className="mb-3 h-10" >
-                        {/* <Form.Label>Email address</Form.Label> */}
-                        <Form.Control type="num" name='num' id='num' placeholder="Enter quantity" required />
+                <div className=' d-flex align-items-center justify-center '>
+                    <form onSubmit={handleAdd} className='text-center border p-4 sm:w-80 md:w-52 lg:w-1/2 bg-orange-100  mt-5 mb-5 ms-5'>
+                        <h2>Add Items Quantity</h2>
+                        <Form.Group className="mb-3 h-10" >
+                            {/* <Form.Label>Email address</Form.Label> */}
+                            <Form.Control type="num" name='num' id='num' placeholder="Enter quantity" required />
 
-                    </Form.Group>
-                    <Button className='w-100 mx-auto d-block' variant="primary" type="submit">
-                        Add Quantity
-                    </Button>
-                </form>
+                        </Form.Group>
+                        <Button c lassName='w-100 mx-auto d-block' variant="primary" type="submit">
+                            Add Quantity
+                        </Button>
+                        <ToastContainer />
+                    </form>
+                </div>
             </div>
             <div className="text-center m-3">
                 <Link to='/manage'><button className='btn btn-outline btn-success ps-4 pe-4'>Manage All</button></Link>

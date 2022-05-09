@@ -3,6 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import useAllItems from '../../hook/useAllItems';
 import useMyItems from '../../hook/UseMyItems';
 import MyItem from './MyItem';
+import './MyItem.css'
 const MyItems = () => {
     // load from useMyItems hook
     const [myItems, setMyItems] = useMyItems([]);
@@ -45,16 +46,31 @@ const MyItems = () => {
     }
     return (
         <div>
+            <ToastContainer />
             <h3 className='text-center text-primary'>Total added : {myItems.length}</h3>
-            <div className='items-container'>
-                <ToastContainer />
-                {
-                    myItems.map(item => <MyItem
-                        key={item._id}
-                        item={item}
-                        handleRemove={handleRemove}
-                    ></MyItem>)
-                }
+            <div className='item-table-container container'>
+                <table className="table table-bordered">
+                    <thead className="thead-dark">
+                        <tr>
+                            <th>No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Image</th>
+                            <th scope='col' ></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            myItems.map(item => <MyItem
+                                key={item._id}
+                                item={item}
+                                handleRemove={handleRemove}
+                            ></MyItem>)
+                        }
+                    </tbody>
+
+                </table>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import h2 from '../../images/h2.jpg';
 import './Icon2.css'
 const icon2 = () => {
     return (
-        <div>
+        <div className='bg-slate-100'>
             <h1 className='text-center'>Live features</h1>
             <div className='icon-parent container rounded  border p-2 m-4 sm:d-block'>
                 <img className='border me-4' src={h2} alt="" />
