@@ -8,6 +8,7 @@ import './Login.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
+import axios from 'axios';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -34,19 +35,23 @@ const Login = () => {
         navigate(from, { replace: true })
     }
     // login with email & password
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         errorElement = "";
         event.preventDefault();
         const email = emailRef.current.value;
-        const password = passwordRef.current.vlaue;
+        const password = passwordRef.current.value;
         console.log(email, password)
-        signInWithEmailAndPassword(email, password)
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('https://sheltered-tundra-55325.herokuapp.com/login', { email });
+        localStorage.setItem('accessToken', data.accessToken);
+        console.log(data)
+        navigate(from, { replace: true })
     }
     // handle reset password
     const handleReset = async (event) => {
         errorElement = "";
         const email = emailRef.current.value;
-        console.log(email)
+
         if (email) {
             await sendPasswordResetEmail(email);
             toast('sent reset password your email')
