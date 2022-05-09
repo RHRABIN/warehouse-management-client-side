@@ -1,0 +1,10 @@
+.manage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width:560px) {
+    .manage-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

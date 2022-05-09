@@ -1,0 +1,13 @@
+.inventory-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+@media screen and (max-width:640px) {
+    .inventory-container {
+        display: block;
+    }
+}
